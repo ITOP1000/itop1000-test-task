@@ -11,8 +11,8 @@ export class AppComponent {
 
   constructor(fb: FormBuilder) {
     this.form = fb.group({
-      name: ['', [Validators.required]],
-      customField: ['', [Validators.required]]
+      email: ['', [Validators.required]],
+      passwordCustomField: ['', [Validators.required]]
     });
   }
 }

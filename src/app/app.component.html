@@ -6,9 +6,9 @@
       <!-- Working area -->
       <form [formGroup]="form">
         <div class="form-group">
-          <input type="text" formControlName="name" class="form-control">
+          <input type="text" formControlName="email" class="form-control">
         </div>
-        <app-custom-input formControlName="customField"></app-custom-input>
+        <app-custom-input formControlName="passwordCustomField"></app-custom-input>
 
         <button class="btn btn-primary" type="submit">Submit</button>
       </form>
@@ -22,8 +22,9 @@
       <ol>
         <li>If you open the console, there is an error. Why?</li>
         <li>Solve the issue.</li>
-        <li>Prevent form to be submitted if is invalid.</li>
-        <li>On form submit add delay 500ms with RxJS</li>
+        <li>Prevent form to be submitted if it's invalid.</li>
+        <li>RxJS: When the user enters an email address and it matches the email pattern save it to localStorage with timestamp as a key</li>
+        <li>RxJS: On 3rd submit if password incorrect lock the form</li>
         <li>Add errors, placeholders and labels to the inputs.</li>
         <li>app-custom-input must take an [input] and send an (output).</li>
       </ol>
